@@ -1,0 +1,65 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles (Normalize)
+
+ */
+
+
+ /* 1. ---General Styles--- */
+
+ body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+section h2, section h3, section p {
+    padding-left: 15px;
+}
+
+.spacer {
+    margin-top: 60px;
+}
+
+.txt-spacer {
+    margin-top: 30px;
+}
+
+.brand-header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.main-content {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.brand-footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+ /* ---End of General Styles--- */
