@@ -15,10 +15,6 @@
     align-items: center;
   }
   
-  .logo {
-    max-width: 50%;
-    margin: 0px auto;
-  }
 
     .spacer {
         margin-top: 60px;
@@ -45,35 +41,47 @@
         padding: 20px;
     }
 
-        .nav {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        
-        .nav li {
-            margin: 0 10px;
-        }
-        
-        .nav a {
-            color: #333;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        
-        .nav a:hover {
-            background-color: #333;
-            color: #fff;
-        }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        height: 80px;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      li {
+        margin: 0 10px;
+      }
+      
+      a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      
+      a:hover {
+        background-color: #333;
+        color: #fff;
+      }
 
  /* ---End of General Styles--- */
