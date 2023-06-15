@@ -45,10 +45,6 @@
         padding: 20px;
     }
 
-    .grid-nav {
-        max-width: 50%;
-    }
-
         .nav {
             display: flex;
             justify-content: center;
