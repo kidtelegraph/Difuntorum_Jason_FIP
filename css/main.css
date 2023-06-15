@@ -8,38 +8,7 @@
 
  /* 1. ---General Styles--- */
 
- body {
-    margin: 0px;
-    padding: 0px;
-}
-
-img, embed, object, video, picture {
-    max-width: auto;
-}
-
-p, h1, h2, h3, h4, h5 {
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    text-decoration: none;
-    transition: all .5s ease-in-out;
-}
-
-input, textarea {
-    display: block;
-    margin: 0px;
-    padding: 0px;
-}
-
-section h2, section h3, section p {
-    padding-left: 15px;
-}
-
-/* 2. ---Header Logo--- */
-
-header {
+ header {
     background-color: #fff;
     height: 80px;
     display: flex;
@@ -82,7 +51,6 @@ header {
         color: #fff;
         padding: 20px;
     }
-
 
 
  /* ---End of General Styles--- */
