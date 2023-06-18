@@ -41,6 +41,20 @@ body {
     background: var(--bg);
 }
 
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+
+}
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -215,6 +229,41 @@ body {
     padding: 1rem 0;
     color: #eee;
 }
+
+.aboutus .row{
+    display: flex;
+    align-items: center;
+    background: var(--bg);
+    flex-wrap: wrap;
+
+}
+
+
+.aboutus .row .image{
+    flex:1 1 45rem;
+}
+
+.aboutus .row .image img{
+    width: 100%;
+}
+
+.aboutus .row .content{
+    flex:1 1 45rem;
+    padding: 2rem;
+}
+
+.aboutus .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.aboutus .row .content p{
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.6;
+}
+
 
 
 /* media queries */
