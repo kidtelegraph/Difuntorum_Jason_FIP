@@ -35,39 +35,6 @@
      margin-top: 10px;
      margin-bottom:10px;
    }
-  
-  .box4 {
-      background-color: powderblue;
-      color: rgb(27, 27, 27);
-      border-radius: 5px;
-      padding: 20px;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom:10px;
-      height: 250px;
-  }
-
-  .box3 {
-      background-color: powderblue;
-      color: rgb(27, 27, 27);
-      border-radius: 5px;
-      padding: 20px;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom:10px;
-      height: 180px;
-  }
-
-  .box2 {
-    background-color: powderblue;
-    color: rgb(27, 27, 27);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom:10px;
-    height: 150px;
-  }
 
   /* 2. ---Mobile Library Grid Styles--- */
   
