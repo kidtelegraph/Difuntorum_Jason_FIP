@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;500;800&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+:root {
+    --header: rgba(46, 49, 146, 0.65);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #16182E;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.home-ad {
+    background-color: powderblue;
+    position: relative;
+    margin-top: 210px;
+}
+
+.home-ad img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* navigation style start here */
+
+.primary-header {
+    background-color: var(--header);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    position: fixed;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    float: right;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation li {
+    margin-right: 10px;
+  }
+
+.logo {
+    margin: 2rem;
+}
+
+.logo img {
+    height: 10rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+}
+
+    nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    left: 0%;
+}
+  
+    nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+  
+    nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+  
+    nav a:hover {
+    background-color: #B9FFFA;
+    color: #3c00ff;
+}
+
+/* mobile screen */
+@media screen and (max-width: 767px) {
+    .primary-navigation {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        font-size: 20px;
+
+        flex-direction: column;
+        padding: min(20vh, 10rem) 0.2em;
+
+        margin-left: 3rem;
+        background-color: var(--header);
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        background-image: url(/images/hamburger-icon.svg);
+        background-color: transparent;
+        aspect-ratio: 1;
+        top: 2rem;
+        bottom: 2rem;
+        right: 2.5rem;
+        width: 3rem;
+        z-index: 9999;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(/images/close-button.svg);
+    }
+    
+}
+
+/* tablet screen */
+@media screen and (min-width:769px) and (max-width:1199px) {
+    .primary-navigation {
+        padding-block: 0rem;
+        padding-inline: clamp(2rem, 5vw, 4rem);
+    }
+
+    nav a {
+        padding: 5px 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .checkout-btn {
+        display: inline-block;
+        padding: .8rem 2rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background-color: var(--main-color);
+        cursor: pointer;
+        font-size: 1rem;
+        background-color: #3c00ff;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+    .primary-navigation {
+        padding-block: 0rem;
+        padding-inline: clamp(2rem, 5vw, 4rem);
+    }
+
+    nav a {
+        padding: 5px 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .checkout-btn {
+        display: inline-block;
+        padding: .8rem 2rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background-color: var(--main-color);
+        cursor: pointer;
+        font-size: 1rem;
+        background-color: #3c00ff;
+    }
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #3c00ff;
+}
+
+.btn {
+    letter-spacing: .2rem;
+}
