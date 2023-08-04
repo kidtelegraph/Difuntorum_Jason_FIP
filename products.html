@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>ZIMA Flavored Beer</title>
 </head>
 <body>
@@ -39,6 +40,28 @@
         </ul>
       </nav>
     </header>
+
+    <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12">
+        <h1 class="headings">OUR<span class="zima-text">PRODUCTS</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="subscribe-form">
+          <h2>subscribe for our newsletter</h2>
+          <form id="subscribe-form" action="#" onsubmit="return validateForm()">
+            <input placeholder="Enter your email address" type="email" id="emailInput" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}">
+            <button class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-socialmedia"><a href=""><i class="fa-brands fa-facebook"></i></a><a href=""><i class="fa-brands fa-instagram"></i></a><a href=""><i class="fa-brands fa-pinterest"></i></a><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+          <div class="footer-nav"> <a href="#">About</a><a href="#">Privacy</a><a href="#">Content Guide</a><a href="#">Terms of use</a><a href="#">Advertising</a><a href="#">Jobs</a></div>
+          <p class="copyright">@ Zima Beer Coors Brewing LLC.</p>
+        </div>
+      </footer>
 
     <script src="js/main.js" defer></script>
 </body>
