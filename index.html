@@ -10,6 +10,7 @@
   <title>ZIMA Flavored Beer</title>
 </head>
 <body>
+    <div class="wrapper">
     <header class="primary-header">
       <a href="index.html" class="logo">
         <img src="images/zima_logo.svg" alt="zima_logo">
@@ -41,26 +42,44 @@
       </nav>
     </header>
 
-    <div class="container banner">
-        <div class="banner-img" >
-            <img src="images/mobile-img/mobile_home_ad1.jpg">
+        <div class="banner-img col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
+            <img src="images/desktop-img/desktop_home_ad_1.jpg" class="desktop-image">
+            <img src="images/tablet-img/tablet_ad_1.jpg" class="tablet-image">
+            <img src="images/mobile-img/mobile_home_ad1.jpg" class="mobile-image">
         </div>
         <div class="banner-content">
             <h2>Quench your Thirst with our NEW Formula!</h2>
         </div>
     </div>
-    <div class="grid-container">
-        <h3>Grab Yours Now!</h3>
-        <div class="home-ad container">
-            <img sizes="(min-width: 768px) 100vw, 40wv"
-            src="images/mobile-img/mobile_home_ad2.jpg" alt=""></div>
-        <h2>ZIMA<span>flavors</span></h2>
+    <div class="container col-span-4 m-col-span-6 l-col-span-8 xl-col-span-10">
+        <div class="col-span-4 m-col-span-8 l-col-span-10 xl-col-span-10">
+            <div class="home-ad">
+                <img src="images/desktop-img/desktop_home_ad_2.jpg" class="desktop-image">
+                <img src="images/tablet-img/tablet_ad_2.jpg" class="tablet-image">
+                <img src="images/mobile-img/mobile_home_ad2.jpg" class="mobile-image">
+            </div>
+            <div class="grab-yours-now">
+                <a class="btn" href="shop.html">Grab Yours Now!</a>
+            </div>
+        </div>
+    </div>        
         <div class="grid">
+            <h2 class="middle-heading">ZIMA<span class="flavors-text">FLAVORS</span></h2>
           <p>the Athlete</p>
           <p>the Nerd</p>
           <p>the Outcast</p>
           <p>the Gamer</p>
         </div>
+      </div>
+
+      <div class="container col-span-4 m-col-span-6 l-col-span-8 xl-col-span-10"> 
+        <div class="promovideo"> 
+            <h2>Step into a world of magic</h2>
+            <video class="col-span-4 m-col-span-6 l-col-span-8 xl-col-span-10" title="zima commercial" controls>
+              <source src="assets/Difuntorum_Jason_ZimaCommercial.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
       </div>
 
       <div class="container">
@@ -80,7 +99,8 @@
           <p class="copyright">@ Zima Beer Coors Brewing LLC.</p>
         </div>
       </footer>
-
+    </body>
+    </div>
     <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -30,27 +30,37 @@ document.addEventListener("DOMContentLoaded", function () {
   
     const products = [{
         title: "The Athlete",
-        price: 7.99
+        price: 7.99,
+        image: "images/mobile-img/mobile_shop_f1.jpg",
+        gif: "images/grapes.gif"
       },
       {
         title: "The Nerd",
-        price: 7.99
+        price: 7.99,
+        image: "images/mobile-img/mobile_shop_f2.jpg",
+        gif: "images/orange.gif"
       },
       {
         title: "The Gamer",
-        price: 7.99
+        price: 7.99,
+        image: "images/mobile-img/mobile_shop_f3.jpg",
+        gif: "images/lemon.gif"
       },
       {
         title: "The Outcast",
-        price: 7.99
+        price: 7.99,
+        image: "images/mobile-img/mobile_shop_f4.jpg",
+        gif: "images/peach.gif"
       },
       {
         title: "Chill 4 Pack",
-        price: 29.99
+        price: 29.99,
+        image: "images/mobile-img/mobile_shop_pack4.jpg"
       },
       {
         title: "The Legends 6 Pack",
-        price: 29.99
+        price: 29.99,
+        image: "images/mobile-img/mobile_shop_pack6.jpg"
       },
     ];
   
@@ -60,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
       productElement.innerHTML = `
         <span class="product-title">${product.title}</span>
         <span class="product-price">$${product.price}</span>
+        <img src="${product.image}" alt="${product.title}" class="product-image">
+        <gif src="${product.gif}" alt="${product.gif}" class="product-gif">
         <button class="add-to-cart btn btn-primary" data-index="${index}">Add to Cart</button>
       `;
       productContainer.appendChild(productElement);
@@ -76,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = product.title;
       const price = product.price;
       const quantity = 1;
+      const image = product.image;
   
       const existingCartItem = cartItems.find(item => item.index === index);
       if (existingCartItem) {
@@ -96,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cartItem.dataset.index = index;
         cartItem.innerHTML = `
           <span class="cart-item-title">${title}</span>
+          <img src="${image}" alt="${title}" class="cart-item-image">
           <span class="cart-item-quantity count-number">${quantity}</span>
           <span class="cart-item-price">$${price * quantity}</span>
           <button class="change-quantity btn" data-change="-1">-</button>
