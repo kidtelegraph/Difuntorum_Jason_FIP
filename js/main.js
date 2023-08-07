@@ -1,7 +1,6 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const detailContainer = document.getElementById("detail-list");
-const supportContainer = document.getElementById("support-list")
 
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute("data-visible");
@@ -72,6 +71,23 @@ details.forEach((detail, index) => {
       image: "images/settings.png"
     }
   ];
+document.addEventListener("DOMContentLoaded", function() {
+  const supportContainer = document.getElementById("support-list");
+
+  const supports = [
+    {
+      description: "If you have any questions or need assistance, our support team is here to help. Please feel free to reach out to us using the contact information below",
+      image: "images/question.png"
+    },
+    {
+      description: "For any inquiries related to our products or services, our dedicated customer support team is available to assist you. Contact us using the details provided",
+      image: "images/operator.png"
+    },
+    {
+      description: "If you have any questions or need assistance, our support team is here to help. Please feel free to reach out to us using the contact information below",
+      image: "images/settings.png"
+    }
+  ];
 
   supports.forEach((support) => {
     const supportElement = document.createElement("div");
@@ -81,10 +97,9 @@ details.forEach((detail, index) => {
       <img src="${support.image}" alt="${support.title}" class="detail-image">
     `;
     supportContainer.appendChild(supportElement);
-  
-    console.log("Support Description:", support.description);
-    console.log("Support Image:", support.image);
   });
+});
+
   
   //Contact Form
 
