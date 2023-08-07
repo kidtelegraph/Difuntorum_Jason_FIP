@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="primary-header">
-      <a href="shop.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="images/zima_logo.svg" alt="zima_logo">
       </a>
 
@@ -38,26 +38,37 @@
         <li>
             <a href="#" class="checkout-btn">Checkout now</a>
         </ul>
+        <button class="cart-icon btn btn-primary">🛒<span class="cart-count">0</span></button>
       </nav>
     </header>
 
-    <div class="col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
+    <div class="containershop banner col-span-4 m-col-span-8 l-col-span-10 xl-col-span-10">
         <h1 class="headings">SHOP<span class="zima-text">ZIMA</span></h1>
+        <div class="banner-img col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
+            <img src="images/desktop-img/desktop_shop_ad_1.jpg" class="desktop-image">
+            <img src="images/tablet-img/tablet_shop_ad1.jpg" class="tablet-image">
+            <img src="images/mobile-img/mobile_shop_ad1.jpg" class="mobile-image">
+        </div>
+    </div>    
+        <h2 class="shop-middle-heading">OUR<span class="shop-flavors-text">FLAVORS</span></h2>
+        <div class="containershop col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
+            <img src="images/desktop-img/desktop_aboutus_ad2.jpg" class="desktop-image">
+            <img src="images/tablet-img/tablet_aboutus_ad2.jpg" class="tablet-image">
+            <img src="images/mobile-img/mobile_aboutus_ad2.jpg" class="mobile-image">
+        </div>
         <div class="products" id="product-list"></div>
-      </div>
 
     <div class="cart-model">
         <div class="cart-content">
-          <h2>Cart</h2>
+          <h2>Cart</h2><span src="${image}"></span>
           <ul class="cart-list" id="cart-items"></ul>
           <p class="total">Total: 0 CA $</p>
           <button class="close-cart btn btn-primary">Close</button>
           <button class="checkout-btn mt-2">Checkout</button>
         </div>
       </div>
-      <button class="cart-icon btn btn-primary">🛒<span class="cart-count">0</span></button>
 
-    <div class="container">
+    <div class="container col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
         <div class="subscribe-form">
           <h2>subscribe for our newsletter</h2>
           <form id="subscribe-form" action="#" onsubmit="return validateForm()">
@@ -74,7 +85,7 @@
           <p class="copyright">@ Zima Beer Coors Brewing LLC.</p>
         </div>
       </footer>
-
+    </body>
     <script src="js/main.js" defer></script>
     <script src="js/shop.js" defer></script>
 </body>

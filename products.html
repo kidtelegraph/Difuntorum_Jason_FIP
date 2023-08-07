@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="primary-header">
-      <a href="products.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="images/zima_logo.svg" alt="zima_logo">
       </a>
 
@@ -41,8 +41,17 @@
       </nav>
     </header>
 
-    <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12">
+    <div class="containerproducts banner col-span-4 m-col-span-8 l-col-span-10 xl-col-span-10">
         <h1 class="headings">OUR<span class="zima-text">PRODUCTS</span></h1>
+        <div class="banner-imgproducts col-span-4 m-col-span-6 l-col-span-8 xl-col-span-8">
+            <img src="images/desktop-img/desktop_shop_pack4.jpg" class="desktop-image">
+            <img src="images/tablet-img/tablet_products_ad1.jpg" class="tablet-image">
+            <img src="images/mobile-img/mobile_shop_pack4.jpg" class="mobile-image">
+        </div>
+        <div>
+            <button class="select-your-flavor btn" onclick="toggleDetails()">Select Your Flavor</button>
+            <div class="details" id="detail-list" style="display: none;"></div>
+        </div>
     </div>
 
     <div class="container">
@@ -63,6 +72,7 @@
         </div>
       </footer>
 
+    <script src="js/shop.js"></script>  
     <script src="js/main.js" defer></script>
 </body>
 </html>
