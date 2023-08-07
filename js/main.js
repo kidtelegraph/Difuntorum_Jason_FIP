@@ -81,6 +81,35 @@ details.forEach((detail, index) => {
       <img src="${support.image}" alt="${support.title}" class="detail-image">
     `;
     supportContainer.appendChild(supportElement);
+  
+    console.log("Support Description:", support.description);
+    console.log("Support Image:", support.image);
   });
   
+  //Contact Form
+
+function saveDataToLocalStorage(data) {
+    const existingData = JSON.parse(localStorage.getItem('contactData')) || [];
+    existingData.push(data);
+    localStorage.setItem('contactData', JSON.stringify(existingData));
+  }
   
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = {};
+  
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+  
+    saveDataToLocalStorage(data);
+  
+    alert('Data sent successfully!');
+  
+    form.reset();
+  }
+  
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', handleSubmit);
