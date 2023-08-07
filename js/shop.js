@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("product-list");
     const cartList = document.getElementById("cart-items");
     const totalElement = document.querySelector(".total");
-    const checkoutButton = document.querySelector(".checkout-button");
+    const checkoutButton = document.querySelector(".checkout-btn");
     const orderModel = document.querySelector(".order-model");
-    const placeOrderButton = document.querySelector(".place-order-button");
+    const placeOrderButton = document.querySelector(".place-order-btn");
     const firstNameInput = document.getElementById("first-name");
     const lastNameInput = document.getElementById("last-name");
     const regionInput = document.getElementById("region");
